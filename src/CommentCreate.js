@@ -4,8 +4,6 @@ import axios from 'axios';
 const CommentCreate = ({ postId }) => {
   const [content, setContent] = useState('');
 
-  console.log(content, postId);
-
   const onSubmit = async (e) => {
     e.preventDefault();
 
@@ -32,7 +30,7 @@ const CommentCreate = ({ postId }) => {
             className="form-control"
           />
         </div>
-        <button className="btn btn-primary bt-3">Submit</button>
+        <button className="btn btn-primary mt-3">Submit</button>
       </form>
     </div>
   );
